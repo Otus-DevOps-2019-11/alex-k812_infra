@@ -1,0 +1,1 @@
+gcloud compute --project=infra-253316 instances create reddit-app --image-family=reddit-full --image-project=infra-253316 --zone=europe-west3-c --machine-type=f1-micro --tags puma-server --restart-on-failure
