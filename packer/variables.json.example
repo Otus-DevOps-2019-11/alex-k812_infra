@@ -1,0 +1,11 @@
+{
+   "prj_id": "P2019",
+   "src_imgfam": "FBSD",
+   "vm_type": "f1-micro",
+   "disksize": "10",
+   "disktype": "pd",
+   "img_dsc": "Description",
+   "netname": "default",
+   "tags": "tag01"
+}
+
