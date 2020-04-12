@@ -36,15 +36,14 @@ resource "google_compute_instance" "app" {
 #    ]
 #  }
 #
-#  provisioner "remote-exec" {
-#    script = "${path.module}/files/deploy.sh"
-#  }
-#
 #  provisioner "file" {
 #    source      = "${path.module}/files/puma.service"
 #    destination = "/tmp/puma.service"
-#    destination = "/etc/systemd/system/puma.service"
 #  }
+#  provisioner "remote-exec" {
+#    script = "${path.module}/files/deploy.sh"
+#  }
+
 }
 
 resource "google_compute_firewall" "firewall_puma" {

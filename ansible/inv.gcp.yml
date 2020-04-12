@@ -6,9 +6,15 @@ regions:
   - europe-west1
 auth_kind: serviceaccount
 service_account_file: /home/ak/gcp_sa.json
+keyed_groups:
+  - key: name
 hostnames:
-  - public_ip
+#  - public_ip
+  - name
 groups:
   app: "'app' in name"
   db: "'db' in name"
+compose:
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP
+filters: []
 ...

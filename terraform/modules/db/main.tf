@@ -23,13 +23,13 @@ resource "google_compute_instance" "db" {
     access_config {}
   }
 
-  provisioner "remote-exec" {
-    inline = [
-      "sudo sed -i 's/bindIp: 127.0.0.1/bindIp: 0.0.0.0/' /etc/mongod.conf",
-      "sudo systemctl restart mongod",
-    ]
-  }
-} 
+#  provisioner "remote-exec" {
+#    inline = [
+#      "sudo sed -i 's/bindIp: 127.0.0.1/bindIp: 0.0.0.0/' /etc/mongod.conf",
+#      "sudo systemctl restart mongod",
+#    ]
+#  }
+}
 
   resource "google_compute_firewall" "firewall_mongo" {
     project = var.project
