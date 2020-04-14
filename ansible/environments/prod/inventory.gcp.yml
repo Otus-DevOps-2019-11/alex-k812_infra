@@ -15,6 +15,5 @@ groups:
   db: "'db' in name"
 compose:
   ansible_host: networkInterfaces[0].accessConfigs[0].natIP
-#  ansible_host: networkInterfaces[0].networkIP
 
 ...

@@ -57,3 +57,15 @@ resource "google_compute_firewall" "firewall_puma" {
   source_ranges = ["0.0.0.0/0"]
   target_tags   = ["puma-server"]
 }
+
+resource "google_compute_firewall" "firewall_http" {
+  project = var.project
+  name    = "allow-puma-server-http"
+  network = "default"
+  allow {
+    protocol = "tcp"
+    ports    = ["80"]
+  }
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["puma-server"]
+}

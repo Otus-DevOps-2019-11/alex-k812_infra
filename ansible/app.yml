@@ -1,9 +1,0 @@
----
- - name: Configure app
-   hosts: app
-   become: true
-   vars:
-    db_host: 10.132.15.230
-
-  roles:
-  - app

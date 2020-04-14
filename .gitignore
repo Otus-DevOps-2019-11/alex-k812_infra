@@ -11,3 +11,6 @@ terraform/stage/.terraform/
 terraform/.terraform/*
 terraform/.terraform/
 *.retry
+jdauphant.nginx
+vault.key
+.ansible/
