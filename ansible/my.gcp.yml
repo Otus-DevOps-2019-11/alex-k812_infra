@@ -1,0 +1,14 @@
+---
+plugin: gcp_compute
+projects:
+  - infra-253316
+regions:
+  - europe-west1
+auth_kind: serviceaccount
+service_account_file: /home/ak/gcp_sa.json
+hostnames:
+  - public_ip
+groups:
+  app: "'app' in name"
+  db: "'db' in name"
+...

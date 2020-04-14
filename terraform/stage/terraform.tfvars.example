@@ -1,0 +1,7 @@
+project          = "project-id"
+name		 = "app-inst"
+public_key_path  = "~/.ssh/appuser.pub"
+private_key_path = "~/.ssh/appuser"
+disk_image       = "disk-image"
+sshuser		 = ["user1","user2","user3"]
+vmcount		 = 1
