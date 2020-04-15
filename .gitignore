@@ -14,3 +14,9 @@ terraform/.terraform/
 jdauphant.nginx
 vault.key
 .ansible/
+.vagrant/
+*.log
+*.pyc
+.molecule
+.cache
+.pytest_cache
