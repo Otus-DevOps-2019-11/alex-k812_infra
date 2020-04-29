@@ -9,7 +9,7 @@
    - name: Fetch the latest version of application code
      git:
       repo: 'https://github.com/express42/reddit.git'
-      dest: /home/ak/reddit
+      dest: /home/{{ deploy_user }}/reddit
       version: monolith
      tags: deploy-tag
      notify: restart puma
@@ -17,7 +17,7 @@
    - name: Bundle install
      bundler:
       state: present
-      chdir: /home/ak/reddit
+      chdir: /home/{{ deploy_user }}/reddit
      tags: deploy-tag
 
 # HANDLERS
