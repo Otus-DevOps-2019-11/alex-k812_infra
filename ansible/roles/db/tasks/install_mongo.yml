@@ -1,8 +1,9 @@
 ---
   - name: Apt key
+    become: true
     apt_key:
       id: E52529D4
-      keyserver: keyserver.ubuntu.com
+      keyserver: keyserver.ubuntu.com:80
       state: present
     tags: install
 
