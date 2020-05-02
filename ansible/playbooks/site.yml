@@ -2,5 +2,6 @@
 - import_playbook: db.yml
 - import_playbook: app.yml
 - import_playbook: deploy.yml
-#- import_playbook: users.yml
+  vars:
+    deploy_user: ubuntu
 ...
