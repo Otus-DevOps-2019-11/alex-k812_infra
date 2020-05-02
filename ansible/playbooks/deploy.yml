@@ -2,6 +2,8 @@
  - name: Deploy application
    hosts: app
    become: true
+   vars:
+     deploy_user: ubuntu
 
 # TASKS
 
