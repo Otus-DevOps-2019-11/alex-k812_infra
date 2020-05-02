@@ -6,3 +6,6 @@
   roles:
   - app
   - jdauphant.nginx
+
+  vars:
+    deploy_user: ubuntu
