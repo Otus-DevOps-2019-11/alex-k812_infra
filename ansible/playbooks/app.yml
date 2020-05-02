@@ -7,5 +7,5 @@
   - app
   - jdauphant.nginx
 
-  vars:
-    deploy_user: ubuntu
+#  vars:
+#    deploy_user: ubuntu

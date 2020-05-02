@@ -4,4 +4,6 @@
 - import_playbook: deploy.yml
   vars:
     deploy_user: ubuntu
+    db_host: 192.168.10.3
+    mongo_bind_ip: 0.0.0.0
 ...
