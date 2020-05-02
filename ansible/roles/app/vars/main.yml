@@ -1,2 +1,4 @@
 ---
 # vars file for app
+deploy_user: ubuntu
+env: vagrant
