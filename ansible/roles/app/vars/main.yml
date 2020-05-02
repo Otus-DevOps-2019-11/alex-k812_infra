@@ -2,3 +2,4 @@
 # vars file for app
 deploy_user: ubuntu
 env: vagrant
+db_host: 192.168.10.3
