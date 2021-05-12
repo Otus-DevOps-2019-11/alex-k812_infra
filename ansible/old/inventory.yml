@@ -1,0 +1,11 @@
+---
+appsrv:
+  hosts:
+    app:
+      ansible_host: 34.77.255.190
+
+dbsrv:
+  hosts:
+    db:
+      ansible_host: 34.77.215.76
+...

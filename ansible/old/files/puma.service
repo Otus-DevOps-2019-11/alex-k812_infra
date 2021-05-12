@@ -1,0 +1,15 @@
+[Unit]
+Description=PumaWebServer
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/home/ak/db_config
+User=ak
+Group=ak
+ExecStart=/bin/bash -lc 'puma'
+WorkingDirectory=/home/ak/reddit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

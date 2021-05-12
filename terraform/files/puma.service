@@ -1,0 +1,14 @@
+[Unit]
+Description=PumaWebServer
+After=network.target
+
+[Service]
+Type=simple
+User=ak
+Group=ak
+ExecStart=/usr/local/bin/puma
+WorkingDirectory=/home/ak/reddit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

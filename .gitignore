@@ -1,0 +1,16 @@
+packer/variables.json
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
+terraform/prod/.terraform/*
+terraform/prod/.terraform/
+terraform/stage/.terraform/*
+terraform/stage/.terraform/
+terraform/.terraform/*
+terraform/.terraform/
+*.retry
+jdauphant.nginx
+vault.key
+.ansible/

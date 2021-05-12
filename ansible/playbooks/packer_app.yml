@@ -1,0 +1,15 @@
+---
+- name: Install Ruby
+  hosts: all
+  become: true
+  tasks:
+  - name: Apt Update and install packages
+    apt:
+      force_apt_get: yes
+      state: present
+      update_cache: yes
+      pkg:
+      - ruby-full
+      - ruby-bundler
+      - build-essential
+...
